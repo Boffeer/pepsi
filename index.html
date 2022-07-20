@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="ru" prefix="og: http://ogp.me/ns#">
+  <head>
+    <meta charset="utf-8" />
+    <title>Каталог ссылок</title>
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="format-detection" content="telephone=no" />
+
+    <meta property="og:title" content="" />
+    <meta property="og:description" content="" />
+    <meta property="og:site_name" content="" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="" />
+    <meta property="og:image" content="" />
+
+    <title>Ссылки на страницы</title>
+    <style>
+      * {
+        box-sizing: border-box;
+        font-family: serif;
+      }
+
+      .container {
+        max-width: 800px;
+        width: 100%;
+        margin: 0 auto;
+        counter-reset: pages;
+      }
+
+      table {
+        width: 100%;
+        counter-reset: subpages;
+        counter-increment: pages;
+      }
+
+      tr {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        border: 1px solid #cecece;
+        margin: 0 0 -1px 0;
+        counter-increment: subpages;
+      }
+
+      td {
+        display: block;
+        height: 100%;
+        padding: 6px 12px;
+      }
+
+      td:nth-child(1) {
+        width: 300px;
+        position: relative;
+      }
+      td:nth-child(1)::before {
+        content: counter(pages) "." counter(subpages) " ";
+      }
+
+      td:nth-child(1)::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 1px;
+        height: 100%;
+        background: #cecece;
+      }
+
+      td:nth-child(2) {
+        width: 100%;
+        white-space: nowrap;
+      }
+
+      .validator {
+        display: block;
+        width: 80px;
+      }
+
+      .validator img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Ссылки на страницы</h1>
+      <h2>Страницы для общего доступа</h2>
+      <table>
+        <tr>
+          <td>Главная страница</td>
+          <td>main.html</td>
+        </tr>
+        <tr>
+          <td>Главная страница</td>
+          <td>main.html</td>
+        </tr>
+        <tr>
+          <td>Главная страница</td>
+          <td>main.html</td>
+        </tr>
+      </table>
+    </div>
+
+    <script>
+      const trElems = document.querySelectorAll("table tr");
+      const originUrl = encodeURIComponent(window.location.origin);
+
+      for (let i = 0; i < trElems.length; i++) {
+        const tr = trElems[i];
+        const trTitle = tr.querySelectorAll("td")[0];
+        const trLink = tr.querySelectorAll("td")[1];
+        const url = trLink.innerText;
+
+        trTitle.setAttribute("title", trTitle.innerText);
+        trLink.innerHTML = `<a href="${url}">${url}<br></a>`;
+
+        // Создание ссылки на валидатор
+        const valid = document.createElement("td");
+        valid.classList.add("validator");
+        valid.innerHTML = `<a href="https://validator.w3.org/nu/?doc=${originUrl}${url}"><img src="https://validator.w3.org/images/w3c.png" alt="Validator" title="Validator"></a>`;
+
+        tr.append(valid);
+
+        // Делает поля чекбоксов
+        const tested = document.createElement("td");
+        tested.classList.add("tested");
+        tested.innerHTML = `<input id="tested-${i}" type="checkbox" name="tested"/>`;
+
+        tr.append(tested);
+      }
+
+      // Делает чекбоксы, которые запоминаются
+      const checkboxes = document.querySelectorAll(".tested input");
+      checkboxes.forEach((checkbox) => {
+        checkbox.addEventListener("click", () => {
+          let checked = [...checkboxes].filter((item) => item.checked);
+          console.log(checked);
+          let checkedIds = [];
+          checked.forEach((check) => checkedIds.push(check.id));
+          localStorage.setItem("verstak-tested", JSON.stringify(checkedIds));
+        });
+
+        if (localStorage.getItem("verstak-tested") != null) {
+          JSON.parse(localStorage.getItem("verstak-tested")).forEach((id) => {
+            if (checkbox.id == id) {
+              checkbox.setAttribute("checked", "checked");
+            }
+          });
+        }
+      });
+    </script>
+  </body>
+</html>

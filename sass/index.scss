@@ -1,0 +1,21 @@
+@import "libs";
+@import "fonts";
+@import "vars";
+@import "grids";
+@import "mixins";
+@import "components";
+
+$fz-p: var(--font-regular);
+$fz-h2: var(--font-title-section);
+
+body {
+  font-family: "Montserrat", Arial, Helvetica, sans-serif;
+  font-size: var(--fz-base);
+  color: var(--c-text-regular);
+}
+
+.fixed {
+  position: fixed;
+  top: 0;
+  left: 0;
+}

@@ -1,0 +1,35 @@
+.form-privacy {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  width: 100%;
+
+  &__checkbox {
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 15px;
+    height: 15px;
+    margin-right: 10px;
+    cursor: pointer;
+    background-color: rgb(130, 130, 130);
+    border-radius: 2px;
+
+    &::after {
+      position: absolute;
+      display: inline-block;
+      width: 4px;
+      height: 4px;
+      content: "";
+      border-radius: 50%;
+    }
+  }
+}
+
+.form-privacy__checkbox-hidden:checked + .form-privacy__checkbox {
+  background-image: url("../img/form/form-check.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 70%;
+}
