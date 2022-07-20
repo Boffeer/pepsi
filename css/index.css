@@ -361,24 +361,45 @@ ol {
 }
 
 @font-face {
-  font-family: Montserrat;
+  font-family: Inter;
   font-style: normal;
-  font-weight: 500;
-  src: url("../fonts/Montserrat-Regular.woff2") format("woff2"), url("../fonts/Montserrat-Regular.woff") format("woff");
+  font-weight: 900;
+  src: url("../fonts/Inter-Black.woff2") format("woff2"), url("path.woff") format("woff");
   font-display: swap;
 }
 @font-face {
-  font-family: Montserrat;
+  font-family: Inter;
+  font-style: italic;
+  font-weight: 900;
+  src: url("../fonts/Inter-BlackItalic.woff2") format("woff2"), url("path.woff") format("woff");
+  font-display: swap;
+}
+@font-face {
+  font-family: Inter;
   font-style: normal;
+  font-weight: 800;
+  src: url("../fonts/Inter-ExtraBold.woff2") format("woff2"), url("path.woff") format("woff");
+  font-display: swap;
+}
+@font-face {
+  font-family: Inter;
+  font-style: italic;
+  font-weight: 800;
+  src: url("../fonts/Inter-ExtraBoldItalic.woff2") format("woff2"), url("path.woff") format("woff");
+  font-display: swap;
+}
+@font-face {
+  font-family: Inter;
+  font-style: italic;
   font-weight: 600;
-  src: url("../fonts/Montserrat-SemiBold.woff2") format("woff2"), url("../fonts/Montserrat-SemiBold.woff") format("woff");
+  src: url("../fonts/Inter-SemiBoldItalic.woff2") format("woff2"), url("path.woff") format("woff");
   font-display: swap;
 }
 @font-face {
-  font-family: Montserrat;
+  font-family: Inter;
   font-style: normal;
-  font-weight: 700;
-  src: url("../fonts/Montserrat-Bold.woff2") format("woff2"), url("../fonts/Montserrat-Bold.woff") format("woff");
+  font-weight: 400;
+  src: url("../fonts/Inter-Regular.woff2") format("woff2"), url("path.woff") format("woff");
   font-display: swap;
 }
 :root {
@@ -395,6 +416,7 @@ ol {
   --bg-modal-overlay: rgba(0, 0, 0, 0.85);
   --c-modal-closer-hover: #ff3b30;
   --transition-modal-closer: all 0.3s;
+  --ff-body: "Inter", Arial, Helvetica, sans-serif;
 }
 
 .container {
@@ -580,7 +602,7 @@ ol {
 }
 
 body {
-  font-family: "Montserrat", Arial, Helvetica, sans-serif;
+  font-family: var(--ff-body);
   font-size: var(--fz-base);
   color: var(--c-text-regular);
 }

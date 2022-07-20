@@ -5,11 +5,8 @@
 @import "mixins";
 @import "components";
 
-$fz-p: var(--font-regular);
-$fz-h2: var(--font-title-section);
-
 body {
-  font-family: "Montserrat", Arial, Helvetica, sans-serif;
+  font-family: var(--ff-body);
   font-size: var(--fz-base);
   color: var(--c-text-regular);
 }

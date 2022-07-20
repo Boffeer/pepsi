@@ -1,26 +1,17 @@
-@font-face {
-  font-family: Montserrat;
-  font-style: normal;
-  font-weight: 500;
-  src: url("../fonts/Montserrat-Regular.woff2") format("woff2"),
-    url("../fonts/Montserrat-Regular.woff") format("woff");
-  font-display: swap;
+@mixin fontface($name, $weight, $path, $style: normal) {
+  @font-face {
+    font-family: #{$name};
+    font-style: #{$style};
+    font-weight: #{$weight};
+    src: url("#{$path}.woff2") format("woff2"),
+      url("#{path}.woff") format("woff");
+    font-display: swap;
+  }
 }
 
-@font-face {
-  font-family: Montserrat;
-  font-style: normal;
-  font-weight: 600;
-  src: url("../fonts/Montserrat-SemiBold.woff2") format("woff2"),
-    url("../fonts/Montserrat-SemiBold.woff") format("woff");
-  font-display: swap;
-}
-
-@font-face {
-  font-family: Montserrat;
-  font-style: normal;
-  font-weight: 700;
-  src: url("../fonts/Montserrat-Bold.woff2") format("woff2"),
-    url("../fonts/Montserrat-Bold.woff") format("woff");
-  font-display: swap;
-}
+@include fontface("Inter", 900, "../fonts/Inter-Black");
+@include fontface("Inter", 900, "../fonts/Inter-BlackItalic", italic);
+@include fontface("Inter", 800, "../fonts/Inter-ExtraBold");
+@include fontface("Inter", 800, "../fonts/Inter-ExtraBoldItalic", italic);
+@include fontface("Inter", 600, "../fonts/Inter-SemiBoldItalic", italic);
+@include fontface("Inter", 400, "../fonts/Inter-Regular");
