@@ -1,3 +1,4 @@
+var lazyLoadInstance = new LazyLoad();
 new WOW().init();
 
 // Load the IFrame Player API code asynchronously.

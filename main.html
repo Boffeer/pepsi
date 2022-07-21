@@ -36,7 +36,10 @@
               <div id="ytplayer" class="hero-bg__video"></div>
             </div>
           </div>
-          <div class="hero-shining"></div>
+          <div
+            class="hero-shining lazy"
+            data-bg="./img/hero/hero-shining.png"
+          ></div>
           <div class="container hero__container">
             <span class="hero__age no-mobile">16+</span>
             <div class="hero__offer">
@@ -63,16 +66,28 @@
               >
             </div>
           </div>
-          <div class="hero__light"></div>
+          <div
+            class="hero__light lazy"
+            data-bg="./img/hero/blue_light.png"
+          ></div>
         </section>
 
         <section class="take">
-          <div class="take-bg"></div>
-          <div class="take-shining"></div>
+          <div
+            class="take-bg lazy"
+            data-bg="./img/take/wave-pattern1-5.png"
+          ></div>
+          <div
+            class="take-shining lazy"
+            data-bg="./img/take/take-shining.png"
+          ></div>
           <div class="take__lines"></div>
           <div class="container take__container">
-            <div class="take__phone"></div>
-            <div class="take__phone no-desktop"></div>
+            <div class="take__phone lazy" data-bg="./img/take/phone.png"></div>
+            <div
+              class="take__phone no-desktop lazy"
+              data-bg="./img/take/phone.png"
+            ></div>
             <div class="take__offer">
               <div class="take__date">22.07&nbsp;-&nbsp;22.08</div>
               <h2 class="take__title section__title">
@@ -84,9 +99,9 @@
               <div class="take-bullet">
                 <picture class="take-bullet__pic"
                   ><img
-                    src="./img/take/num-1.png"
+                    data-src="./img/take/num-1.png"
                     alt=" Отправляй свое лучшее фото в телеграм-бот"
-                    class="take-bullet__img"
+                    class="take-bullet__img lazy"
                 /></picture>
                 <p class="take-bullet__desc">
                   Отправляй свое лучшее <br />
@@ -103,9 +118,9 @@
               <div class="take-bullet">
                 <picture class="take-bullet__pic"
                   ><img
-                    src="./img/take/num-2.png"
+                    data-src="./img/take/num-2.png"
                     alt="Скачивай свою конкурсную работу"
-                    class="take-bullet__img"
+                    class="take-bullet__img lazy"
                 /></picture>
                 <p class="take-bullet__desc">
                   Скачивай свою <br />
@@ -115,9 +130,9 @@
               <div class="take-bullet">
                 <picture class="take-bullet__pic"
                   ><img
-                    src="./img/take/num-3.png"
+                    data-src="./img/take/num-3.png"
                     alt="Публикуй в Instagram с отметкой @pepsi.belarus"
-                    class="take-bullet__img"
+                    class="take-bullet__img lazy"
                 /></picture>
                 <p class="take-bullet__desc">
                   Публикуй в Instagram с&nbsp;отметкой @pepsi.belarus*
@@ -141,14 +156,14 @@
           </div>
         </section>
 
-        <section class="winners">
+        <section class="winners lazy" data-bg="./img/winners/winners-bg.jpg">
           <div class="container winners__container">
             <div class="winners__lines"></div>
             <picture class="winners__pic"
               ><img
-                src="./img/winners/billboard.png"
+                data-src="./img/winners/billboard.png"
                 alt="pepsi"
-                class="winners__img"
+                class="winners__img lazy"
             /></picture>
             <h2 class="winners__title">
               5 конкурсантов <br />
@@ -356,7 +371,11 @@
                 rel="noreferrer nofollow"
                 class="socials__icon"
               >
-                <img src="./img/common/vk.png" alt="мы в VK" />
+                <img
+                  class="lazy"
+                  data-src="./img/common/vk.png"
+                  alt="мы в VK"
+                />
               </a>
               <a
                 href="https://www.instagram.com/pepsi.belarus/"
@@ -364,7 +383,11 @@
                 rel="noreferrer nofollow"
                 class="socials__icon"
               >
-                <img src="./img/common/ig.png" alt="Мы в Instagram" />
+                <img
+                  class="lazy"
+                  data-src="./img/common/ig.png"
+                  alt="Мы в Instagram"
+                />
               </a>
             </div>
           </div>
@@ -716,6 +739,7 @@
       </p>
     </div>
     <script src="./js/libs/wow.min.js"></script>
+    <script src="./js/libs/lazyload.min.js"></script>
     <script src="./js/modals.js"></script>
     <script src="./js/index.js"></script>
   </body>
