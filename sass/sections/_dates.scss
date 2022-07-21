@@ -1,7 +1,21 @@
 .dates {
   position: relative;
   z-index: 4;
-  padding-top: 330px;
-  margin-top: -330px;
+  padding-top: 240px;
+  margin-top: -390px;
   background: linear-gradient(360deg, #020824 85.81%, rgba(0, 0, 0, 0) 95.71%);
+}
+
+.dates__callout {
+  margin-bottom: 115px;
+}
+
+.dates__title {
+  margin-bottom: 60px;
+  font-size: 35px;
+  font-style: italic;
+  font-weight: 900;
+  line-height: 42px;
+  text-align: center;
+  text-transform: uppercase;
 }

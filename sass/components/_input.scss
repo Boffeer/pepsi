@@ -1,0 +1,25 @@
+.input {
+  width: 100%;
+  margin-bottom: 19px;
+}
+.textarea {
+  width: 100%;
+  margin-bottom: 36px;
+  resize: none;
+}
+.input__field,
+.textarea__field {
+  width: 100%;
+  padding: 16px;
+  font-size: 25px;
+  font-weight: 400;
+  color: rgba(0, 0, 0, 0.5);
+  text-align: center;
+  background-color: #fff;
+  border-radius: 15px;
+}
+
+.textarea__field {
+  padding-top: 24px;
+  padding-bottom: 24px;
+}

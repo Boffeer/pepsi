@@ -1,0 +1,20 @@
+.socials {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.socials__icon {
+  display: block;
+  width: 130px;
+  height: 130px;
+  margin-right: 77px;
+  background-color: #fff;
+  border-radius: 100%;
+  transition: all 0.3s ease-in-out;
+}
+.socials__icon:hover {
+  background-color: var(--c-accent);
+}
+.socials__icon:last-child {
+  margin-right: 0;
+}

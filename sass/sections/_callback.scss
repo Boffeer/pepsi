@@ -1,0 +1,31 @@
+.callback {
+  padding-top: 125px;
+  padding-bottom: 206px;
+  margin-top: -10px;
+  background-color: #020824;
+}
+.callback__container {
+  display: grid;
+  grid-template-columns: 1.5fr 0.5fr;
+  align-content: center;
+}
+
+.callback__form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  max-width: 988px;
+}
+
+.callback__button {
+  width: 100%;
+  max-width: 603px;
+  padding-top: 24px;
+  padding-bottom: 24px;
+}
+
+.callback__socials {
+  padding-top: 76px;
+}
