@@ -1,13 +1,13 @@
 .dates {
   position: relative;
   z-index: 4;
+  background: #020824;
 }
 
 .dates__container {
   padding-right: 40px;
   padding-bottom: 125px;
   padding-left: 40px;
-  background: #020824;
 
   @media (min-width: 1800px) {
     padding-right: 160px;

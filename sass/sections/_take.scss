@@ -69,6 +69,10 @@
   @media (max-width: 1099px) {
     display: none;
   }
+
+  @media (min-width: 1930px) {
+    height: 320px;
+  }
 }
 .take__date {
   margin-bottom: -10px;
@@ -272,6 +276,7 @@
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
+  transition: all 0.3s ease;
 
   @media (max-width: 1750px) {
     top: -280px;

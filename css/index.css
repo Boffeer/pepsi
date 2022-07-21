@@ -3592,6 +3592,13 @@ ol {
     padding: 0 16px;
   }
 }
+@media (min-width: 1920px) {
+  .container {
+    max-width: 1800px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+}
 
 .b_button {
   display: inline-block;
@@ -4098,6 +4105,11 @@ ol {
     height: 106px;
   }
 }
+@media (min-width: 1930px) {
+  .hero__offer::before {
+    height: 320px;
+  }
+}
 
 .hero__title {
   margin-bottom: 63px;
@@ -4148,13 +4160,35 @@ ol {
   }
 }
 
+@media (min-width: 1800px) {
+  .hero-bg::before {
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+    display: block;
+    width: 100%;
+    height: 70px;
+    content: "";
+    background-color: #0241a2;
+  }
+  .hero-bg::after {
+    position: absolute;
+    top: 0;
+    left: 63%;
+    display: block;
+    width: 70px;
+    height: 100%;
+    content: "";
+    background-color: #0241a2;
+  }
+}
 .hero-bg {
   position: absolute;
-  top: 0;
+  top: -20px;
   left: 0;
   z-index: 1;
   width: 100%;
-  height: 100%;
+  height: calc(100% + 28px);
   overflow: hidden;
   background-color: #0241a2;
 }
@@ -4176,6 +4210,11 @@ ol {
 @media (max-width: 576px) and (min-width: 360px) {
   .hero-bg {
     height: 45vh;
+  }
+}
+@media (max-width: 320px) {
+  .hero-bg {
+    height: 55vh;
   }
 }
 
@@ -4237,7 +4276,7 @@ ol {
   width: 100%;
   height: calc(100% + 10px);
   content: "";
-  background: linear-gradient(-90deg, #0241a2 5.81%, rgba(0, 0, 0, 0) 95.71%);
+  background: linear-gradient(-90deg, #0241a2 5.81%, rgba(0, 0, 0, 0) 45.71%);
 }
 
 .hero-bg__img {
@@ -4367,6 +4406,11 @@ ol {
 @media (max-width: 1099px) {
   .take__lines {
     display: none;
+  }
+}
+@media (min-width: 1930px) {
+  .take__lines {
+    height: 320px;
   }
 }
 
@@ -4630,6 +4674,7 @@ ol {
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
+  transition: all 0.3s ease;
 }
 @media (max-width: 1750px) {
   .take__phone {
@@ -4993,17 +5038,22 @@ ol {
     height: 80px;
   }
 }
+@media (min-width: 1930px) {
+  .winners__lines {
+    height: 320px;
+  }
+}
 
 .dates {
   position: relative;
   z-index: 4;
+  background: #020824;
 }
 
 .dates__container {
   padding-right: 40px;
   padding-bottom: 125px;
   padding-left: 40px;
-  background: #020824;
 }
 @media (min-width: 1800px) {
   .dates__container {
@@ -5484,7 +5534,7 @@ a.text--underline:hover {
 #requirements {
   max-height: 80vh;
   overflow: auto;
-  color: #000;
+  background-color: var(--c-accent);
 }
 
 #requirements h3 {
@@ -5503,5 +5553,5 @@ a.text--underline:hover {
 }
 
 #requirements a {
-  color: var(--c-accent);
+  border-bottom: 1px solid #fff;
 }/*# sourceMappingURL=index.css.map */
