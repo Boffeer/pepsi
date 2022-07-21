@@ -9,6 +9,16 @@
   position: relative;
   z-index: 3;
   padding: 0 153px;
+  @media (max-width: 1680px) {
+    padding: 0 93px;
+  }
+
+  @media (max-width: 1500px) {
+    padding: 0 63px;
+  }
+  @media (max-width: 1200px) {
+    padding: 0 40px;
+  }
 }
 .take-bg {
   position: absolute;
@@ -42,6 +52,9 @@
   font-size: 38px;
   font-style: italic;
   font-weight: 900;
+  @media (max-width: 1400px) {
+    margin-bottom: 10px;
+  }
 }
 .take__title .text--hl {
   @media (max-width: 1750px) {
@@ -55,6 +68,11 @@
   align-items: center;
   justify-content: space-between;
   margin-bottom: -10px;
+
+  @media (max-width: 1200px) {
+    justify-content: center;
+    margin-left: -170px;
+  }
 }
 .take-bullet {
   display: flex;
@@ -78,6 +96,12 @@
   @media (max-width: 1750px) {
     max-width: 290px;
   }
+  @media (max-width: 1400px) {
+    max-width: 250px;
+  }
+  @media (max-width: 1200px) {
+    max-width: 210px;
+  }
 }
 .take-bullet__img {
   display: block;
@@ -93,11 +117,20 @@
   @media (max-width: 1750px) {
     font-size: 38px;
   }
+  @media (max-width: 1460px) {
+    font-size: 35px;
+  }
+  @media (max-width: 1200px) {
+    font-size: 30px;
+  }
 }
 .take-bullet:first-child .take-bullet__desc {
   margin-left: -80px;
   // margin-right: 100px;
   // margin-left: -40px;
+  @media (max-width: 1400px) {
+    margin-left: -60px;
+  }
 }
 
 .take__phone {
@@ -116,6 +149,14 @@
     top: -280px;
     right: 250px;
     height: 600px;
+  }
+  @media (max-width: 1500px) {
+    top: -170px;
+    right: 160px;
+    height: 430px;
+  }
+  @media (max-width: 1200px) {
+    height: 380px;
   }
 }
 

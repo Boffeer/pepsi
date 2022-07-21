@@ -5,10 +5,21 @@
   padding-bottom: 125px;
   margin-top: -390px;
   background: linear-gradient(360deg, #020824 85.81%, rgba(0, 0, 0, 0) 95.71%);
+
+  @media (max-width: 1500px) {
+    padding-bottom: 70px;
+  }
+  @media (max-width: 1200px) {
+    padding-bottom: 35px;
+  }
 }
 
 .dates__callout {
   margin-bottom: 115px;
+
+  @media (max-width: 1440px) {
+    margin-bottom: 50px;
+  }
 }
 
 .dates__title {
@@ -19,6 +30,13 @@
   line-height: 42px;
   text-align: center;
   text-transform: uppercase;
+
+  @media (max-width: 1400px) {
+    font-size: 32px;
+  }
+  @media (max-width: 1200px) {
+    font-size: 28px;
+  }
 }
 
 .dates-table__title {
@@ -26,27 +44,56 @@
   font-size: 32px;
   font-style: italic;
   font-weight: 400;
+
+  @media (max-width: 1400px) {
+    margin-bottom: 20px;
+    font-size: 26px;
+  }
 }
 .dates-table {
   display: grid;
   grid-template-columns: 350px auto;
   column-gap: 104px;
+
+  @media (max-width: 1500px) {
+    column-gap: 65px;
+  }
+  @media (max-width: 1400px) {
+    grid-template-columns: 270px auto;
+    column-gap: 35px;
+  }
+  @media (max-width: 1200px) {
+    grid-template-columns: 230px auto;
+  }
 }
 .dates-table__button {
   width: 100%;
   margin-bottom: 24px;
   font-size: 45px;
   font-style: italic;
+
+  @media (max-width: 1400px) {
+    font-size: 35px;
+  }
+  @media (max-width: 1200px) {
+    font-size: 28px;
+  }
 }
 
 .dates-table__row {
   display: grid;
   grid-template-columns: 312px auto;
   column-gap: 29px;
+
+  @media (max-width: 1200px) {
+    grid-template-columns: 212px auto;
+  }
 }
 
 .dates-table__row-item {
-  display: block;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   padding: 25px 10px;
   margin-bottom: 24px;
   font-size: 32px;
@@ -56,6 +103,20 @@
   text-align: center;
   background-color: #0012c3;
   border-radius: 44px;
+
+  @media (max-width: 1500px) {
+    font-size: 26px;
+  }
+  @media (max-width: 1400px) {
+    padding-top: 18px;
+    padding-bottom: 18px;
+    font-size: 24px;
+  }
+  @media (max-width: 1200px) {
+    padding-right: 15px;
+
+    padding-left: 15px;
+  }
 }
 
 .dates-table__tab-page {

@@ -8,6 +8,10 @@
   margin-right: auto;
   margin-left: auto;
   font-style: italic;
+
+  @media (max-width: 1200px) {
+    max-width: 900px;
+  }
 }
 .callout__title {
   position: relative;
@@ -19,6 +23,9 @@
   font-style: italic;
   font-weight: 900;
   text-align: center;
+  @media (max-width: 1200px) {
+    font-size: 45px;
+  }
 }
 
 .callout__title::before,

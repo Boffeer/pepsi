@@ -14,6 +14,7 @@
 .winners__pic {
   display: block;
   max-width: 78%;
+  min-height: 1000px;
   margin-top: 0;
   margin-bottom: -67%;
   margin-left: auto;
@@ -22,6 +23,9 @@
   @media (max-width: 1750px) {
     max-width: 88%;
     margin-bottom: -77%;
+  }
+  @media (max-width: 1200px) {
+    margin-bottom: -110%;
   }
 }
 .winners__img {
@@ -35,6 +39,7 @@
   position: relative;
   z-index: 2;
   margin-bottom: 50px;
+  text-shadow: 1px 1px 20px #3b72d7;
 }
 .winners__title span {
   display: block;
@@ -47,16 +52,34 @@
 .winners__title span:nth-of-type(1) {
   font-size: 360px;
   line-height: 0.9em;
+  @media (max-width: 1440px) {
+    font-size: 290px;
+  }
 }
 .winners__title span:nth-of-type(2) {
   font-size: 125px;
   line-height: 0.7em;
+  @media (max-width: 1440px) {
+    font-size: 95px;
+  }
 }
 .winners__title span:nth-of-type(3) {
   font-size: 140px;
+  @media (max-width: 1440px) {
+    font-size: 120px;
+  }
+  @media (max-width: 1200px) {
+    font-size: 100px;
+  }
 }
 .winners__title span:nth-of-type(4) {
   font-size: 95px;
+  @media (max-width: 1440px) {
+    font-size: 85px;
+  }
+  @media (max-width: 1200px) {
+    font-size: 75px;
+  }
 }
 .winners__title span:nth-of-type(5) {
   font-size: 75px;
@@ -64,6 +87,12 @@
 
   @media (max-width: 1750px) {
     font-size: 70px;
+  }
+  @media (max-width: 1500px) {
+    font-size: 55px;
+  }
+  @media (max-width: 1200px) {
+    font-size: 45px;
   }
 }
 

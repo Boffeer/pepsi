@@ -3,11 +3,29 @@
   padding-bottom: 206px;
   margin-top: -10px;
   background-color: #020824;
+
+  @media (max-width: 1500px) {
+    padding-top: 70px;
+  }
+  @media (max-width: 1200px) {
+    padding-top: 35px;
+  }
 }
 .callback__container {
   display: grid;
   grid-template-columns: 1.5fr 0.5fr;
+  column-gap: 150px;
   align-content: center;
+
+  @media (max-width: 1440px) {
+    column-gap: 80px;
+  }
+  @media (max-width: 1200px) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
 }
 
 .callback__form {

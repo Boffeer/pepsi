@@ -4,6 +4,13 @@
   padding-top: 49px;
   padding-bottom: 286px;
   background-color: var(--c-accent);
+
+  @media (max-width: 1750px) {
+    padding-bottom: 236px;
+  }
+  @media (max-width: 1500px) {
+    padding-bottom: 155px;
+  }
 }
 .hero__container {
   position: relative;
@@ -29,6 +36,12 @@
 
   @media (max-width: 1750px) {
     max-width: 760px;
+  }
+  @media (max-width: 1500px) {
+    max-width: 650px;
+  }
+  @media (max-width: 1200px) {
+    max-width: 490px;
   }
 }
 .hero__title {
