@@ -1889,7 +1889,9 @@ ol {
 }
 @media (max-width: 991px) {
   .dates-table {
+    position: relative;
     display: block;
+    overflow: visible;
   }
 }
 
@@ -1913,6 +1915,12 @@ ol {
     padding-left: 40px;
     white-space: nowrap;
   }
+  .dates-table__scroller-track::after {
+    display: block;
+    min-width: 60px;
+    height: 20px;
+    content: "";
+  }
 }
 .dates-table__title {
   margin-bottom: 25px;
@@ -1924,6 +1932,11 @@ ol {
   .dates-table__title {
     margin-bottom: 20px;
     font-size: 26px;
+  }
+}
+@media (max-width: 767px) {
+  .dates-table__title {
+    display: none;
   }
 }
 
@@ -1964,6 +1977,12 @@ ol {
 @media (max-width: 1200px) {
   .dates-table__row {
     grid-template-columns: 212px auto;
+  }
+}
+@media (max-width: 767px) {
+  .dates-table__row {
+    display: block;
+    margin-bottom: 20px;
   }
 }
 
@@ -2014,6 +2033,31 @@ ol {
   border-color: #0012c3;
 }
 
+@media (max-width: 767px) {
+  .dates-table__body-headings {
+    display: none;
+  }
+}
+
+@media (max-width: 767px) {
+  .dates-table__row-date {
+    display: inline-block;
+    width: auto;
+    max-width: initial;
+    margin-bottom: 10px;
+    font-size: 20px;
+    color: #0012c3;
+    background-color: #fff;
+  }
+  .dates-table__row-place {
+    font-size: 15px;
+  }
+  .dates-table__heading {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+  }
+}
 .callback {
   padding-top: 125px;
   padding-bottom: 206px;

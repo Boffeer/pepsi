@@ -121,7 +121,9 @@
     grid-template-columns: 230px auto;
   }
   @media (max-width: 991px) {
+    position: relative;
     display: block;
+    overflow: visible;
   }
 }
 @media (max-width: 991px) {
@@ -145,6 +147,12 @@
     padding-left: 40px;
     white-space: nowrap;
   }
+  .dates-table__scroller-track::after {
+    display: block;
+    min-width: 60px;
+    height: 20px;
+    content: "";
+  }
 }
 
 .dates-table__title {
@@ -156,6 +164,9 @@
   @media (max-width: 1400px) {
     margin-bottom: 20px;
     font-size: 26px;
+  }
+  @media (max-width: 767px) {
+    display: none;
   }
 }
 
@@ -187,6 +198,10 @@
   }
   @media (max-width: 1200px) {
     grid-template-columns: 212px auto;
+  }
+  @media (max-width: 767px) {
+    display: block;
+    margin-bottom: 20px;
   }
 }
 
@@ -229,4 +244,30 @@
   color: #fff;
   background-color: #0012c3;
   border-color: #0012c3;
+}
+
+.dates-table__body-headings {
+  @media (max-width: 767px) {
+    display: none;
+  }
+}
+
+@media (max-width: 767px) {
+  .dates-table__row-date {
+    display: inline-block;
+    width: auto;
+    max-width: initial;
+    margin-bottom: 10px;
+    font-size: 20px;
+    color: #0012c3;
+    background-color: #fff;
+  }
+
+  .dates-table__row-place {
+    font-size: 15px;
+  }
+  .dates-table__heading {
+    position: sticky;
+    top: 0;
+  }
 }
