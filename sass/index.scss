@@ -52,6 +52,11 @@ body {
 }
 .text--underline {
   border-bottom: 1px solid #fff;
+  transition: all 0.3s ease;
+}
+a.text--underline:hover {
+  color: #9bb5ee;
+  border-bottom-color: #9bb5ee;
 }
 
 .wrapper {

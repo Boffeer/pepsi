@@ -19,6 +19,9 @@
   @media (max-width: 1200px) {
     padding-bottom: 35px;
   }
+  @media (max-width: 576px) {
+    margin-top: -60px;
+  }
 }
 
 .dates__callout {
@@ -82,8 +85,10 @@
   }
 }
 .dates__title .text--small {
-  margin-top: 20px;
-  font-size: 18px;
+  @media (max-width: 767px) {
+    margin-top: 20px;
+    font-size: 18px;
+  }
 }
 .dates__title .text--hl:before {
   @media (min-width: 768px) {

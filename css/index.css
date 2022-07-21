@@ -494,11 +494,23 @@ ol {
 .button--primary {
   color: var(--c-accent);
   background-color: #fff;
+  border: 2px solid transparent;
+}
+
+.button--primary:hover {
+  color: #fff;
+  background-color: var(--c-accent);
+  border: 2px solid #fff;
 }
 
 .button--invert {
   color: #fff;
   background-color: #0012c3;
+}
+
+.button--invert:hover {
+  color: #0012c3;
+  background-color: #fff;
 }
 
 .button--secondary {
@@ -749,8 +761,14 @@ ol {
     font-size: 15px;
   }
 }
-.input__field:placeholder,
-.textarea__field:placeholder {
+.input__field::-moz-placeholder, .textarea__field::-moz-placeholder {
+  color: rgba(0, 0, 0, 0.5);
+}
+.input__field:-ms-input-placeholder, .textarea__field:-ms-input-placeholder {
+  color: rgba(0, 0, 0, 0.5);
+}
+.input__field::placeholder,
+.textarea__field::placeholder {
   color: rgba(0, 0, 0, 0.5);
 }
 
@@ -973,6 +991,16 @@ ol {
     background-image: url("../img/hero/line_block_mobile.svg");
   }
 }
+@media (max-width: 768px) {
+  .hero__offer::before {
+    height: 180px;
+  }
+}
+@media (max-width: 575px) {
+  .hero__offer::before {
+    height: 106px;
+  }
+}
 
 .hero__title {
   margin-bottom: 43px;
@@ -1105,11 +1133,11 @@ ol {
 
 .hero-bg__video-wrap::after {
   position: absolute;
-  top: 0;
-  right: 0;
+  right: -10px;
+  bottom: -10px;
   display: block;
   width: 100%;
-  height: 100%;
+  height: calc(100% + 10px);
   content: "";
   background: linear-gradient(-90deg, #0241a2 5.81%, rgba(0, 0, 0, 0) 95.71%);
 }
@@ -1156,7 +1184,7 @@ ol {
   background-position: top right;
   background-size: contain;
 }
-@media (max-width: 576px) {
+@media (max-width: 768px) {
   .hero-shining {
     display: none;
   }
@@ -1168,6 +1196,7 @@ ol {
   padding-top: 340px;
   padding-bottom: 130px;
   margin-top: -270px;
+  pointer-events: none;
 }
 @media (max-width: 1099px) {
   .take {
@@ -1185,6 +1214,7 @@ ol {
   position: relative;
   z-index: 3;
   padding: 0 153px;
+  pointer-events: initial;
 }
 @media (max-width: 1680px) {
   .take__container {
@@ -1322,6 +1352,16 @@ ol {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+  }
+}
+@media (max-width: 575px) {
+  .take__bullets {
+    transform: translate(30px);
+  }
+}
+@media (max-width: 320px) {
+  .take__bullets {
+    transform: none;
   }
 }
 
@@ -1591,6 +1631,7 @@ ol {
   z-index: 2;
   width: 100%;
   height: 100%;
+  pointer-events: var(--pi-decor);
   background-image: url("../img/take/take-shining.png");
   background-repeat: no-repeat;
   background-position: top right;
@@ -1637,6 +1678,11 @@ ol {
 @media (max-width: 768px) {
   .winners__container::after {
     height: 140px;
+  }
+}
+@media (max-width: 576px) {
+  .winners__container::after {
+    height: 290px;
   }
 }
 
@@ -1871,6 +1917,11 @@ ol {
     padding-bottom: 35px;
   }
 }
+@media (max-width: 576px) {
+  .dates__container {
+    margin-top: -60px;
+  }
+}
 
 .dates__callout {
   margin-bottom: 115px;
@@ -1947,9 +1998,11 @@ ol {
   }
 }
 
-.dates__title .text--small {
-  margin-top: 20px;
-  font-size: 18px;
+@media (max-width: 767px) {
+  .dates__title .text--small {
+    margin-top: 20px;
+    font-size: 18px;
+  }
 }
 
 @media (min-width: 768px) {
@@ -2294,6 +2347,12 @@ body {
 
 .text--underline {
   border-bottom: 1px solid #fff;
+  transition: all 0.3s ease;
+}
+
+a.text--underline:hover {
+  color: #9bb5ee;
+  border-bottom-color: #9bb5ee;
 }
 
 .wrapper {

@@ -27,10 +27,20 @@
 .button--primary {
   color: var(--c-accent);
   background-color: #fff;
+  border: 2px solid transparent;
+}
+.button--primary:hover {
+  color: #fff;
+  background-color: var(--c-accent);
+  border: 2px solid #fff;
 }
 .button--invert {
   color: #fff;
   background-color: #0012c3;
+}
+.button--invert:hover {
+  color: #0012c3;
+  background-color: #fff;
 }
 
 .button--secondary {
