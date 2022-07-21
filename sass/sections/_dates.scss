@@ -1,23 +1,23 @@
 .dates {
   position: relative;
   z-index: 4;
-  padding-bottom: 125px;
+}
 
+.dates__container {
+  padding-right: 40px;
+  padding-bottom: 125px;
+  padding-left: 40px;
+  background: #020824;
+
+  @media (max-width: 767px) {
+    padding-right: 16px;
+    padding-left: 16px;
+  }
   @media (max-width: 1600px) {
     padding-bottom: 70px;
   }
   @media (max-width: 1200px) {
     padding-bottom: 35px;
-  }
-}
-
-.dates__container {
-  padding-right: 40px;
-  padding-left: 40px;
-  background: #020824;
-  @media (max-width: 767px) {
-    padding-right: 16px;
-    padding-left: 16px;
   }
 }
 
