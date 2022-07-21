@@ -1,7 +1,8 @@
 .dates {
   position: relative;
   z-index: 4;
-  padding-top: 240px;
+  padding-top: 280px;
+  padding-bottom: 125px;
   margin-top: -390px;
   background: linear-gradient(360deg, #020824 85.81%, rgba(0, 0, 0, 0) 95.71%);
 }
@@ -18,4 +19,48 @@
   line-height: 42px;
   text-align: center;
   text-transform: uppercase;
+}
+
+.dates-table__title {
+  margin-bottom: 25px;
+  font-size: 32px;
+  font-style: italic;
+  font-weight: 400;
+}
+.dates-table {
+  display: grid;
+  grid-template-columns: 350px auto;
+  column-gap: 104px;
+}
+.dates-table__button {
+  width: 100%;
+  margin-bottom: 24px;
+  font-size: 45px;
+  font-style: italic;
+}
+
+.dates-table__button--active {
+  color: #fff;
+  background-color: #0012c3;
+  border-color: transparent;
+}
+
+.dates-table__row {
+  display: grid;
+  grid-template-columns: 312px auto;
+  column-gap: 29px;
+}
+
+.dates-table__row-item {
+  display: block;
+  padding: 25px 10px;
+  margin-bottom: 24px;
+  font-size: 32px;
+  font-style: italic;
+  font-weight: 900;
+  color: #fff;
+  text-align: center;
+  background-color: #0012c3;
+  border-color: #0012c3;
+  border-radius: 44px;
 }

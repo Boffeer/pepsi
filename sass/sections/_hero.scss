@@ -18,10 +18,18 @@
   font-style: italic;
   font-weight: 900;
   text-align: right;
+
+  @media (max-width: 1750px) {
+    font-size: 70px;
+  }
 }
 .hero__offer {
   max-width: 1000px;
   margin-left: auto;
+
+  @media (max-width: 1750px) {
+    max-width: 760px;
+  }
 }
 .hero__title {
   margin-bottom: 43px;

@@ -17,6 +17,7 @@
   text-align: center;
   text-transform: uppercase;
   border-radius: 60em;
+  transition: all 0.3s ease;
 }
 .button--primary {
   color: var(--c-accent);
@@ -25,4 +26,9 @@
 .button--invert {
   color: #fff;
   background-color: #0012c3;
+}
+
+.button--secondary {
+  color: #fff;
+  border: 2px solid #fff;
 }

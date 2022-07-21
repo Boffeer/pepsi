@@ -476,6 +476,7 @@ ol {
   text-align: center;
   text-transform: uppercase;
   border-radius: 60em;
+  transition: all 0.3s ease;
 }
 
 .button--primary {
@@ -486,6 +487,11 @@ ol {
 .button--invert {
   color: #fff;
   background-color: #0012c3;
+}
+
+.button--secondary {
+  color: #fff;
+  border: 2px solid #fff;
 }
 
 .form-privacy {
@@ -737,10 +743,20 @@ ol {
   font-weight: 900;
   text-align: right;
 }
+@media (max-width: 1750px) {
+  .hero__age {
+    font-size: 70px;
+  }
+}
 
 .hero__offer {
   max-width: 1000px;
   margin-left: auto;
+}
+@media (max-width: 1750px) {
+  .hero__offer {
+    max-width: 760px;
+  }
 }
 
 .hero__title {
@@ -852,6 +868,12 @@ ol {
   font-weight: 900;
 }
 
+@media (max-width: 1750px) {
+  .take__title .text--hl {
+    margin-left: 20px;
+  }
+}
+
 .take__bullets {
   display: flex;
   flex-wrap: wrap;
@@ -881,6 +903,11 @@ ol {
   max-width: 328px;
   height: auto;
 }
+@media (max-width: 1750px) {
+  .take-bullet__pic {
+    max-width: 290px;
+  }
+}
 
 .take-bullet__img {
   display: block;
@@ -894,6 +921,11 @@ ol {
   font-style: italic;
   font-weight: 800;
 }
+@media (max-width: 1750px) {
+  .take-bullet__desc {
+    font-size: 38px;
+  }
+}
 
 .take-bullet:first-child .take-bullet__desc {
   margin-left: -80px;
@@ -903,12 +935,20 @@ ol {
   position: absolute;
   top: -370px;
   right: 200px;
-  width: 440px;
+  width: 100%;
+  max-width: 440px;
   height: 737px;
   background-image: url("../img/take/phone.png");
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
+}
+@media (max-width: 1750px) {
+  .take__phone {
+    top: -280px;
+    right: 250px;
+    height: 600px;
+  }
 }
 
 .take__hint {
@@ -934,6 +974,19 @@ ol {
   mix-blend-mode: color-dodge;
 }
 
+.dates-table__tab-page {
+  display: none;
+}
+
+.dates-table__tab-page.tab--active {
+  display: block;
+}
+
+.dates-table__button.tab--active {
+  color: #fff;
+  background-color: #0012c3;
+}
+
 .winners {
   position: relative;
   z-index: 3;
@@ -956,6 +1009,12 @@ ol {
   margin-left: auto;
   transform: translate(40px, -180px);
 }
+@media (max-width: 1750px) {
+  .winners__pic {
+    max-width: 88%;
+    margin-bottom: -77%;
+  }
+}
 
 .winners__img {
   display: block;
@@ -968,6 +1027,7 @@ ol {
 .winners__title {
   position: relative;
   z-index: 2;
+  margin-bottom: 50px;
 }
 
 .winners__title span {
@@ -1000,6 +1060,11 @@ ol {
   font-size: 75px;
   line-height: 1.4em;
 }
+@media (max-width: 1750px) {
+  .winners__title span:nth-of-type(5) {
+    font-size: 70px;
+  }
+}
 
 .winners__lines {
   position: absolute;
@@ -1017,7 +1082,8 @@ ol {
 .dates {
   position: relative;
   z-index: 4;
-  padding-top: 240px;
+  padding-top: 280px;
+  padding-bottom: 125px;
   margin-top: -390px;
   background: linear-gradient(360deg, #020824 85.81%, rgba(0, 0, 0, 0) 95.71%);
 }
@@ -1034,6 +1100,54 @@ ol {
   line-height: 42px;
   text-align: center;
   text-transform: uppercase;
+}
+
+.dates-table__title {
+  margin-bottom: 25px;
+  font-size: 32px;
+  font-style: italic;
+  font-weight: 400;
+}
+
+.dates-table {
+  display: grid;
+  grid-template-columns: 350px auto;
+  -moz-column-gap: 104px;
+       column-gap: 104px;
+}
+
+.dates-table__button {
+  width: 100%;
+  margin-bottom: 24px;
+  font-size: 45px;
+  font-style: italic;
+}
+
+.dates-table__button--active {
+  color: #fff;
+  background-color: #0012c3;
+  border-color: transparent;
+}
+
+.dates-table__row {
+  display: grid;
+  grid-template-columns: 312px auto;
+  -moz-column-gap: 29px;
+       column-gap: 29px;
+}
+
+.dates-table__row-item {
+  display: block;
+  padding: 25px 10px;
+  margin-bottom: 24px;
+  font-size: 32px;
+  font-style: italic;
+  font-weight: 900;
+  color: #fff;
+  text-align: center;
+  background-color: #0012c3;
+  border-color: #0012c3;
+  border-radius: 44px;
 }
 
 .callback {
@@ -1075,6 +1189,11 @@ ol {
   font-weight: 900;
   line-height: 1.25;
   text-transform: uppercase;
+}
+@media (max-width: 1750px) {
+  .section__title {
+    font-size: 90px;
+  }
 }
 
 body {
