@@ -1024,6 +1024,7 @@ ol {
   z-index: 1;
   width: 100%;
   height: 100%;
+  overflow: hidden;
   background-color: #0241a2;
 }
 @media (max-width: 1099px) {
@@ -1041,6 +1042,11 @@ ol {
     height: 35vh;
   }
 }
+@media (max-width: 412px) and (min-width: 360px) {
+  .hero-bg {
+    height: 45vh;
+  }
+}
 
 .hero-bg__pic {
   display: block;
@@ -1051,6 +1057,56 @@ ol {
   .hero-bg__pic {
     max-width: 100%;
   }
+}
+
+.hero-bg__video-wrap {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: none;
+  width: 100%;
+  max-width: 65%;
+  height: 100%;
+  overflow: hidden;
+}
+@media (max-width: 992px) {
+  .hero-bg__video-wrap {
+    display: none;
+  }
+}
+
+.hero-bg__video {
+  position: absolute;
+  top: -25%;
+  left: -30%;
+  width: 160%;
+  height: 150%;
+  pointer-events: none;
+}
+@media (max-width: 375px) and (min-width: 360px) {
+  .hero-bg__video {
+    top: -35%;
+    left: -40%;
+    width: 170%;
+    height: 150%;
+  }
+}
+@media (max-width: 320px) {
+  .hero-bg__video {
+    left: -20%;
+    width: 140%;
+  }
+}
+
+.hero-bg__video-wrap::after {
+  position: absolute;
+  top: 0;
+  right: 0;
+  display: block;
+  width: 100%;
+  height: 100%;
+  content: "";
+  background: linear-gradient(-90deg, #0241a2 5.81%, rgba(0, 0, 0, 0) 95.71%);
 }
 
 .hero-bg__img {
@@ -1464,6 +1520,11 @@ ol {
     transform: rotate(-16.1deg);
   }
 }
+@media (max-width: 412px) and (min-width: 360px) {
+  .take__phone {
+    right: -164px;
+  }
+}
 
 @media (max-width: 1099px) {
   .take__phone.no-desktop {
@@ -1734,6 +1795,11 @@ ol {
     height: 30px;
   }
 }
+@media (max-width: 412px) and (min-width: 360px) {
+  .winners__lines {
+    height: 80px;
+  }
+}
 
 .dates {
   position: relative;
@@ -1757,6 +1823,8 @@ ol {
 @media (max-width: 767px) {
   .dates {
     padding-top: 127px;
+    padding-top: 185px;
+    background: linear-gradient(360deg, #020824 88.81%, rgba(0, 0, 0, 0) 95.71%);
   }
 }
 
