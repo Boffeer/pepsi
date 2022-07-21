@@ -1,3 +1,53 @@
+new WOW().init();
+
+// Load the IFrame Player API code asynchronously.
+var tag = document.createElement("script");
+tag.src = "https://www.youtube.com/player_api";
+var firstScriptTag = document.getElementsByTagName("script")[0];
+firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+// Replace the 'ytplayer' element with an <iframe> and
+// YouTube player after the API code downloads.
+var player;
+function onYouTubePlayerAPIReady() {
+  player = new YT.Player("ytplayer", {
+    videoId: "XpRbFYtR0_A",
+    events: {
+      onReady: onPlayerReady,
+      onStateChange: cahngePlayerState,
+    },
+    playerVars: {
+      autoplay: 1,
+      controls: 0,
+      showinfo: 0,
+      modestbranding: 1,
+      fs: 0,
+      cc_load_policy: 0,
+      iv_load_policy: 3,
+      autohide: 1,
+      playsinline: 1,
+      mute: 1,
+      loop: 1,
+      rel: 0,
+      version: 3,
+      origin: window.location.href,
+    },
+  });
+}
+
+function onPlayerReady(event) {
+  event.target.setVolume(40);
+  event.target.playVideo();
+}
+
+function cahngePlayerState(data) {
+  console.log(data);
+  if (data.data == 1) {
+    document.querySelector(".hero-bg__video-wrap").style.display = "block";
+  } else if (data.data == 0) {
+    document.querySelector(".hero-bg__video-wrap").remove();
+  }
+}
+
 /**
  * @tabs
  *
@@ -94,51 +144,3 @@ setTimeout(() => {
 // }
 
 // ---
-
-// Load the IFrame Player API code asynchronously.
-var tag = document.createElement("script");
-tag.src = "https://www.youtube.com/player_api";
-var firstScriptTag = document.getElementsByTagName("script")[0];
-firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
-// Replace the 'ytplayer' element with an <iframe> and
-// YouTube player after the API code downloads.
-var player;
-function onYouTubePlayerAPIReady() {
-  player = new YT.Player("ytplayer", {
-    videoId: "XpRbFYtR0_A",
-    events: {
-      onReady: onPlayerReady,
-      onStateChange: cahngePlayerState,
-    },
-    playerVars: {
-      autoplay: 1,
-      controls: 0,
-      showinfo: 0,
-      modestbranding: 1,
-      fs: 0,
-      cc_load_policy: 0,
-      iv_load_policy: 3,
-      autohide: 1,
-      playsinline: 1,
-      mute: 1,
-      loop: 1,
-      rel: 0,
-      version: 3,
-      origin: window.location.href,
-    },
-  });
-}
-
-function onPlayerReady(event) {
-  event.target.setVolume(40);
-  event.target.playVideo();
-}
-
-function cahngePlayerState(data) {
-  console.log(data);
-  if (data.data == 1) {
-    document.querySelector(".hero-bg__video-wrap").style.display = "block";
-  } else if (data.data == 0) {
-    document.querySelector(".hero-bg__video-wrap").remove();
-  }
-}
