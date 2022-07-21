@@ -124,6 +124,7 @@ function onYouTubePlayerAPIReady() {
       loop: 1,
       rel: 0,
       version: 3,
+      origin: window.location.href,
     },
   });
 }
