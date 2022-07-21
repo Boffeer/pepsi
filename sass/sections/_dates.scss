@@ -1,32 +1,20 @@
 .dates {
   position: relative;
   z-index: 4;
-  padding-top: 190px;
   padding-bottom: 125px;
-  margin-top: -380px;
-  background: linear-gradient(360deg, #020824 85.81%, rgba(0, 0, 0, 0) 95.71%);
 
   @media (max-width: 1600px) {
     padding-bottom: 70px;
   }
   @media (max-width: 1200px) {
-    padding-top: 150px;
     padding-bottom: 35px;
-  }
-  @media (max-width: 767px) {
-    padding-top: 127px;
-    padding-top: 185px;
-    background: linear-gradient(
-      360deg,
-      #020824 88.81%,
-      rgba(0, 0, 0, 0) 95.71%
-    );
   }
 }
 
 .dates__container {
   padding-right: 40px;
   padding-left: 40px;
+  background: #020824;
   @media (max-width: 767px) {
     padding-right: 16px;
     padding-left: 16px;
@@ -196,7 +184,7 @@
     margin-bottom: 0;
     font-size: 18px;
   }
-  @media (max-width: 412px) {
+  @media (max-width: 420px) {
     margin-right: 20px;
     font-size: 20px;
   }

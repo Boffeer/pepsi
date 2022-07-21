@@ -1602,6 +1602,33 @@ ol {
   background-position: center;
   background-size: cover;
 }
+@media (max-width: 1200px) {
+  .winners {
+    padding-bottom: 130px;
+  }
+}
+@media (max-width: 768px) {
+  .winners {
+    padding-bottom: 50px;
+  }
+}
+
+.winners__container::after {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  display: block;
+  width: 100%;
+  height: 280px;
+  margin-bottom: -10px;
+  content: "";
+  background: linear-gradient(360deg, #020824 45.81%, rgba(0, 0, 0, 0) 95.71%);
+}
+@media (max-width: 768px) {
+  .winners__container::after {
+    height: 140px;
+  }
+}
 
 .winners__container {
   padding: 0px 133px;
@@ -1810,10 +1837,7 @@ ol {
 .dates {
   position: relative;
   z-index: 4;
-  padding-top: 190px;
   padding-bottom: 125px;
-  margin-top: -380px;
-  background: linear-gradient(360deg, #020824 85.81%, rgba(0, 0, 0, 0) 95.71%);
 }
 @media (max-width: 1600px) {
   .dates {
@@ -1822,21 +1846,14 @@ ol {
 }
 @media (max-width: 1200px) {
   .dates {
-    padding-top: 150px;
     padding-bottom: 35px;
-  }
-}
-@media (max-width: 767px) {
-  .dates {
-    padding-top: 127px;
-    padding-top: 185px;
-    background: linear-gradient(360deg, #020824 88.81%, rgba(0, 0, 0, 0) 95.71%);
   }
 }
 
 .dates__container {
   padding-right: 40px;
   padding-left: 40px;
+  background: #020824;
 }
 @media (max-width: 767px) {
   .dates__container {
