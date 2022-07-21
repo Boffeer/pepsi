@@ -39,12 +39,6 @@
   font-style: italic;
 }
 
-.dates-table__button--active {
-  color: #fff;
-  background-color: #0012c3;
-  border-color: transparent;
-}
-
 .dates-table__row {
   display: grid;
   grid-template-columns: 312px auto;
@@ -61,6 +55,17 @@
   color: #fff;
   text-align: center;
   background-color: #0012c3;
-  border-color: #0012c3;
   border-radius: 44px;
+}
+
+.dates-table__tab-page {
+  display: none;
+}
+.dates-table__tab-page.tab--active {
+  display: block;
+}
+.dates-table__button.tab--active {
+  color: #fff;
+  background-color: #0012c3;
+  border-color: #0012c3;
 }

@@ -141,14 +141,3 @@
   background-size: contain;
   mix-blend-mode: color-dodge;
 }
-
-.dates-table__tab-page {
-  display: none;
-}
-.dates-table__tab-page.tab--active {
-  display: block;
-}
-.dates-table__button.tab--active {
-  color: #fff;
-  background-color: #0012c3;
-}
