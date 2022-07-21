@@ -18,6 +18,11 @@
   text-transform: uppercase;
   border-radius: 60em;
   transition: all 0.3s ease;
+  @media (max-width: 767px) {
+    max-width: 237px;
+    padding: 8px 20px;
+    font-size: 15px;
+  }
 }
 .button--primary {
   color: var(--c-accent);

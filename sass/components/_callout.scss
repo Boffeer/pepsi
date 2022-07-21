@@ -29,6 +29,12 @@
   @media (max-width: 991px) {
     font-size: 35px;
   }
+  @media (max-width: 767px) {
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin-bottom: 26px;
+    font-size: 25px;
+  }
 }
 
 .callout__title::before,

@@ -14,6 +14,10 @@
   @media (max-width: 991px) {
     padding: 0px 83px;
   }
+  @media (max-width: 767px) {
+    padding-right: 16px;
+    padding-left: 16px;
+  }
 }
 .winners__pic {
   display: block;
@@ -44,6 +48,10 @@
     min-height: initial;
     transform: translate(40px, -40px);
   }
+  @media (max-width: 767px) {
+    margin-bottom: -50%;
+    transform: translate(0px, -20px);
+  }
 }
 .winners__img {
   display: block;
@@ -71,6 +79,12 @@
   }
   @media (max-width: 1200px) {
     font-size: 45px;
+  }
+  @media (max-width: 767px) {
+    font-size: 25px;
+    br {
+      display: none;
+    }
   }
 }
 .winners__title span {
@@ -139,4 +153,8 @@
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+  @media (max-width: 767px) {
+    top: 70px;
+    height: 30px;
+  }
 }

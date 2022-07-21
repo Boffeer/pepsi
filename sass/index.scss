@@ -33,6 +33,9 @@ body {
   content: "";
   border: 3px solid #fff;
   border-radius: 0.6em;
+  @media (max-width: 767px) {
+    border: 2px solid #fff;
+  }
 }
 
 .text--hl::before {

@@ -13,11 +13,18 @@
     padding-top: 150px;
     padding-bottom: 35px;
   }
+  @media (max-width: 767px) {
+    padding-top: 127px;
+  }
 }
 
 .dates__container {
   padding-right: 40px;
   padding-left: 40px;
+  @media (max-width: 767px) {
+    padding-right: 16px;
+    padding-left: 16px;
+  }
 }
 
 .dates__callout {
@@ -46,6 +53,10 @@
   @media (max-width: 991px) {
     font-size: 60px;
   }
+  @media (max-width: 767px) {
+    margin-bottom: 20px;
+    font-size: 30px;
+  }
 }
 .dates__subtitle {
   margin-bottom: 70px;
@@ -61,18 +72,36 @@
     margin-bottom: 40px;
     font-size: 35px;
   }
+  @media (max-width: 767px) {
+    margin-bottom: 20px;
+    font-size: 15px;
+  }
 }
 
+.dates__title .text--hl {
+  @media (max-width: 767px) {
+    padding-right: 20px;
+    padding-left: 20px;
+  }
+}
+.dates__title .text--small {
+  margin-top: 20px;
+  font-size: 18px;
+}
 .dates__title .text--hl:before {
-  left: -3%;
-  width: 106%;
-  transform: rotate(0.95deg);
+  @media (min-width: 768px) {
+    left: -3%;
+    width: 106%;
+    transform: rotate(0.95deg);
+  }
 }
 
 .dates__title .text--hl:after {
-  left: -3%;
-  width: 106%;
-  transform: rotate(-0.79deg);
+  @media (min-width: 768px) {
+    left: -3%;
+    width: 106%;
+    transform: rotate(-0.79deg);
+  }
 }
 
 .dates-table {

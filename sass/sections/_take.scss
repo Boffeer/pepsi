@@ -9,6 +9,9 @@
     padding-top: 110px;
     margin-top: 0;
   }
+  @media (max-width: 767px) {
+    padding-bottom: 40px;
+  }
 }
 
 .take__container {
@@ -24,6 +27,10 @@
   }
   @media (max-width: 1200px) {
     padding: 0 40px;
+  }
+  @media (max-width: 767px) {
+    padding-right: 16px;
+    padding-left: 16px;
   }
 }
 .take-bg {
@@ -69,6 +76,9 @@
   @media (max-width: 1400px) {
     margin-bottom: 10px;
   }
+  @media (max-width: 767px) {
+    font-size: 18px;
+  }
 }
 
 .take__offer {
@@ -76,6 +86,10 @@
     display: flex;
     flex-direction: column;
     text-align: center;
+  }
+  @media (max-width: 767px) {
+    position: relative;
+    z-index: 2;
   }
 }
 
@@ -86,11 +100,18 @@
   @media (max-width: 991px) {
     font-size: 50px;
   }
+  @media (max-width: 767px) {
+    margin-bottom: 5px;
+    font-size: 30px;
+  }
 }
 
 .take__title .text--hl {
   @media (max-width: 1750px) {
     margin-left: 20px;
+  }
+  @media (max-width: 767px) {
+    margin-left: 0;
   }
 }
 
@@ -123,10 +144,25 @@
   @media (max-width: 992px) {
     max-width: 80%;
   }
+  @media (max-width: 767px) {
+    width: 100%;
+    max-width: 100%;
+    margin-bottom: -30px;
+    margin-left: -20px;
+  }
 }
 .take-bullet:nth-child(2) {
   margin-bottom: -50px;
   margin-left: 120px;
+  @media (max-width: 767px) {
+    padding-left: 40px;
+    margin-bottom: -20px;
+    margin-left: 0;
+    transform: translateX(-15px);
+    .take-bullet__desc {
+      transform: translateX(40px);
+    }
+  }
 }
 .take-bullet:last-child {
   max-width: 61%;
@@ -144,6 +180,14 @@
     max-width: 80%;
     margin-left: 55px;
   }
+  @media (max-width: 767px) {
+    max-width: 100%;
+    padding-left: 0;
+    margin-left: -30px;
+    .take-bullet__desc {
+      transform: translateX(20px);
+    }
+  }
 }
 .take-bullet__pic {
   display: block;
@@ -160,6 +204,10 @@
   }
   @media (max-width: 1200px) {
     max-width: 210px;
+  }
+  @media (max-width: 767px) {
+    max-width: 124px;
+    margin-left: 0;
   }
 }
 .take-bullet__img {
@@ -185,6 +233,9 @@
   @media (max-width: 991px) {
     font-size: 26px;
   }
+  @media (max-width: 767px) {
+    font-size: 13px;
+  }
 }
 .take-bullet:first-child .take-bullet__desc {
   margin-left: -80px;
@@ -192,6 +243,9 @@
   // margin-left: -40px;
   @media (max-width: 1400px) {
     margin-left: -60px;
+  }
+  @media (max-width: 1400px) {
+    margin-left: -20px;
   }
 }
 
@@ -228,6 +282,12 @@
     top: -120px;
     right: -170px;
   }
+  @media (max-width: 767px) {
+    top: -110px;
+    right: -144px;
+    height: 270px;
+    transform: rotate(-16.1deg);
+  }
 }
 
 .take__phone.no-desktop {
@@ -241,6 +301,12 @@
     left: -180px;
     height: 280px;
   }
+  @media (max-width: 768px) {
+    top: -100px;
+    left: -140px;
+    z-index: 1;
+    height: 160px;
+  }
 }
 
 .take__hint {
@@ -248,7 +314,7 @@
   font-size: 25px;
   font-style: italic;
   font-weight: 800;
-  line-height: 30px;
+  line-height: 1.25;
   text-align: center;
 
   @media (max-width: 1100px) {
@@ -258,6 +324,10 @@
     br {
       display: none;
     }
+  }
+  @media (max-width: 767px) {
+    margin-bottom: 20px;
+    font-size: 10px;
   }
 }
 
