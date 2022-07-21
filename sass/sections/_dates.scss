@@ -76,6 +76,9 @@
     margin-bottom: 20px;
     font-size: 15px;
   }
+  @media (max-width: 375px) and (min-width: 360px) {
+    font-size: 14px;
+  }
 }
 
 .dates__title .text--hl {
@@ -185,7 +188,20 @@
   @media (max-width: 991px) {
     margin-right: 15px;
     margin-bottom: 0;
+    font-size: 18px;
   }
+  @media (max-width: 412px) {
+    margin-right: 20px;
+    font-size: 20px;
+  }
+  @media (max-width: 390px) {
+    margin-right: 15px;
+    font-size: 18px;
+  }
+  // @media (max-width: 320px) {
+
+  //   margin-right: 15px;
+  // }
 }
 
 .dates-table__row {

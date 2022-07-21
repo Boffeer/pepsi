@@ -1833,6 +1833,11 @@ ol {
     font-size: 15px;
   }
 }
+@media (max-width: 375px) and (min-width: 360px) {
+  .dates__subtitle {
+    font-size: 14px;
+  }
+}
 
 @media (max-width: 767px) {
   .dates__title .text--hl {
@@ -1960,6 +1965,19 @@ ol {
   .dates-table__button {
     margin-right: 15px;
     margin-bottom: 0;
+    font-size: 18px;
+  }
+}
+@media (max-width: 412px) {
+  .dates-table__button {
+    margin-right: 20px;
+    font-size: 20px;
+  }
+}
+@media (max-width: 390px) {
+  .dates-table__button {
+    margin-right: 15px;
+    font-size: 18px;
   }
 }
 
