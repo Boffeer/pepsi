@@ -26,6 +26,7 @@
   margin-top: 0;
   margin-bottom: -43%;
   margin-left: auto;
+  pointer-events: var(--pi-decor);
   transform: translate(40px, -180px);
 
   @media (max-width: 1750px) {
