@@ -31,6 +31,10 @@
   @media (max-width: 1199px) {
     margin-bottom: -70%;
   }
+  @media (max-width: 1099px) {
+    min-height: 770px;
+    transform: translate(40px, -110px);
+  }
 }
 .winners__img {
   display: block;

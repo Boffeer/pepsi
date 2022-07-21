@@ -925,6 +925,7 @@ ol {
     right: unset;
     bottom: unset;
     left: unset;
+    height: 75vh;
   }
 }
 
@@ -945,6 +946,12 @@ ol {
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
+}
+@media (max-width: 1099px) {
+  .hero-bg__img {
+    -o-object-position: top;
+       object-position: top;
+  }
 }
 
 .hero__light {
@@ -1096,6 +1103,7 @@ ol {
   .take__bullets {
     display: flex;
     flex-direction: column;
+    align-items: center;
     justify-content: center;
   }
 }
@@ -1126,11 +1134,10 @@ ol {
 }
 @media (max-width: 1099px) {
   .take-bullet:last-child {
-    max-width: 50%;
     margin-top: unset;
     margin-right: unset;
     margin-bottom: 0;
-    margin-left: -40px;
+    margin-left: 25px;
   }
 }
 
@@ -1248,6 +1255,11 @@ ol {
   line-height: 30px;
   text-align: center;
 }
+@media (max-width: 1100px) {
+  .take__hint {
+    font-size: 20px;
+  }
+}
 
 .take-shining {
   position: absolute;
@@ -1301,6 +1313,12 @@ ol {
 @media (max-width: 1199px) {
   .winners__pic {
     margin-bottom: -70%;
+  }
+}
+@media (max-width: 1099px) {
+  .winners__pic {
+    min-height: 770px;
+    transform: translate(40px, -110px);
   }
 }
 
@@ -1445,6 +1463,11 @@ ol {
     padding-top: 150px;
     padding-bottom: 35px;
   }
+}
+
+.dates__container {
+  padding-right: 20px;
+  padding-left: 20px;
 }
 
 .dates__callout {

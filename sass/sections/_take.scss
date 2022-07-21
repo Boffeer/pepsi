@@ -104,6 +104,7 @@
   @media (max-width: 1099px) {
     display: flex;
     flex-direction: column;
+    align-items: center;
     justify-content: center;
   }
 }
@@ -128,11 +129,10 @@
   margin-right: auto;
   margin-left: auto;
   @media (max-width: 1099px) {
-    max-width: 50%;
     margin-top: unset;
     margin-right: unset;
     margin-bottom: 0;
-    margin-left: -40px;
+    margin-left: 25px;
   }
 }
 .take-bullet__pic {
@@ -228,6 +228,10 @@
   font-weight: 800;
   line-height: 30px;
   text-align: center;
+
+  @media (max-width: 1100px) {
+    font-size: 20px;
+  }
 }
 
 .take-shining {
