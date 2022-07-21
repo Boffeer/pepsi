@@ -1047,7 +1047,7 @@ ol {
     height: 35vh;
   }
 }
-@media (max-width: 412px) and (min-width: 360px) {
+@media (max-width: 420px) and (min-width: 360px) {
   .hero-bg {
     height: 45vh;
   }
@@ -1525,7 +1525,7 @@ ol {
     transform: rotate(-16.1deg);
   }
 }
-@media (max-width: 412px) and (min-width: 360px) {
+@media (max-width: 420px) and (min-width: 360px) {
   .take__phone {
     right: -164px;
   }
@@ -1801,7 +1801,7 @@ ol {
     height: 30px;
   }
 }
-@media (max-width: 412px) and (min-width: 360px) {
+@media (max-width: 420px) and (min-width: 360px) {
   .winners__lines {
     height: 80px;
   }
@@ -2042,7 +2042,7 @@ ol {
     font-size: 18px;
   }
 }
-@media (max-width: 412px) {
+@media (max-width: 420px) {
   .dates-table__button {
     margin-right: 20px;
     font-size: 20px;
@@ -2287,7 +2287,7 @@ body {
 }
 
 #requirements {
-  max-height: 90vh;
+  max-height: 80vh;
   overflow: auto;
   color: #000;
 }
