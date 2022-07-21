@@ -658,6 +658,11 @@ ol {
     font-size: 45px;
   }
 }
+@media (max-width: 991px) {
+  .callout__title {
+    font-size: 35px;
+  }
+}
 
 .callout__title::before,
 .callout__title::after {
@@ -902,6 +907,11 @@ ol {
     text-align: center;
   }
 }
+@media (max-width: 991px) {
+  .hero__title {
+    margin-bottom: 20px;
+  }
+}
 
 .hero__logo {
   width: 100%;
@@ -925,7 +935,7 @@ ol {
     right: unset;
     bottom: unset;
     left: unset;
-    height: 75vh;
+    height: 60vh;
   }
 }
 
@@ -1080,6 +1090,11 @@ ol {
     order: -1;
   }
 }
+@media (max-width: 991px) {
+  .take__title {
+    font-size: 50px;
+  }
+}
 
 @media (max-width: 1750px) {
   .take__title .text--hl {
@@ -1119,6 +1134,11 @@ ol {
     margin-bottom: -70px;
   }
 }
+@media (max-width: 992px) {
+  .take-bullet {
+    max-width: 80%;
+  }
+}
 
 .take-bullet:nth-child(2) {
   margin-bottom: -50px;
@@ -1138,6 +1158,12 @@ ol {
     margin-right: unset;
     margin-bottom: 0;
     margin-left: 25px;
+  }
+}
+@media (max-width: 992px) {
+  .take-bullet:last-child {
+    max-width: 80%;
+    margin-left: 55px;
   }
 }
 
@@ -1191,6 +1217,11 @@ ol {
     font-size: 30px;
   }
 }
+@media (max-width: 991px) {
+  .take-bullet__desc {
+    font-size: 26px;
+  }
+}
 
 .take-bullet:first-child .take-bullet__desc {
   margin-left: -80px;
@@ -1238,12 +1269,25 @@ ol {
     transform: rotate(-11.81deg);
   }
 }
+@media (max-width: 991px) {
+  .take__phone {
+    top: -120px;
+    right: -170px;
+  }
+}
 
 @media (max-width: 1099px) {
   .take__phone.no-desktop {
     right: unset;
     left: -100px;
     transform: rotate(17.34deg);
+  }
+}
+@media (max-width: 991px) {
+  .take__phone.no-desktop {
+    top: -110px;
+    left: -180px;
+    height: 280px;
   }
 }
 
@@ -1258,6 +1302,11 @@ ol {
 @media (max-width: 1100px) {
   .take__hint {
     font-size: 20px;
+  }
+}
+@media (max-width: 991px) {
+  .take__hint br {
+    display: none;
   }
 }
 
@@ -1287,6 +1336,11 @@ ol {
 
 .winners__container {
   padding: 0px 133px;
+}
+@media (max-width: 991px) {
+  .winners__container {
+    padding: 0px 83px;
+  }
 }
 
 .winners__pic {
@@ -1319,6 +1373,13 @@ ol {
   .winners__pic {
     min-height: 770px;
     transform: translate(40px, -110px);
+  }
+}
+@media (max-width: 991px) {
+  .winners__pic {
+    max-width: 100%;
+    min-height: initial;
+    transform: translate(40px, -40px);
   }
 }
 
@@ -1466,8 +1527,8 @@ ol {
 }
 
 .dates__container {
-  padding-right: 20px;
-  padding-left: 20px;
+  padding-right: 40px;
+  padding-left: 40px;
 }
 
 .dates__callout {
@@ -1496,6 +1557,11 @@ ol {
 @media (max-width: 1200px) {
   .dates__title {
     font-size: 70px;
+  }
+}
+@media (max-width: 991px) {
+  .dates__title {
+    font-size: 60px;
   }
 }
 
@@ -1528,19 +1594,6 @@ ol {
   transform: rotate(-0.79deg);
 }
 
-.dates-table__title {
-  margin-bottom: 25px;
-  font-size: 32px;
-  font-style: italic;
-  font-weight: 400;
-}
-@media (max-width: 1400px) {
-  .dates-table__title {
-    margin-bottom: 20px;
-    font-size: 26px;
-  }
-}
-
 .dates-table {
   display: grid;
   grid-template-columns: 350px auto;
@@ -1566,6 +1619,45 @@ ol {
     grid-template-columns: 230px auto;
   }
 }
+@media (max-width: 991px) {
+  .dates-table {
+    display: block;
+  }
+}
+
+@media (max-width: 991px) {
+  .dates-table__content {
+    width: calc(100% + 80px);
+    margin-bottom: 40px;
+    margin-left: -40px;
+    overflow: hidden;
+  }
+  .dates-table__scroller {
+    margin-bottom: -20px;
+    overflow-x: auto;
+    overflow-y: hidden;
+  }
+  .dates-table__scroller-track {
+    display: flex;
+    align-items: center;
+    padding-right: 40px;
+    padding-bottom: 20px;
+    padding-left: 40px;
+    white-space: nowrap;
+  }
+}
+.dates-table__title {
+  margin-bottom: 25px;
+  font-size: 32px;
+  font-style: italic;
+  font-weight: 400;
+}
+@media (max-width: 1400px) {
+  .dates-table__title {
+    margin-bottom: 20px;
+    font-size: 26px;
+  }
+}
 
 .dates-table__button {
   width: 100%;
@@ -1581,6 +1673,12 @@ ol {
 @media (max-width: 1200px) {
   .dates-table__button {
     font-size: 28px;
+  }
+}
+@media (max-width: 991px) {
+  .dates-table__button {
+    margin-right: 15px;
+    margin-bottom: 0;
   }
 }
 

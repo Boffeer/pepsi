@@ -10,6 +10,10 @@
 }
 .winners__container {
   padding: 0px 133px;
+
+  @media (max-width: 991px) {
+    padding: 0px 83px;
+  }
 }
 .winners__pic {
   display: block;
@@ -34,6 +38,11 @@
   @media (max-width: 1099px) {
     min-height: 770px;
     transform: translate(40px, -110px);
+  }
+  @media (max-width: 991px) {
+    max-width: 100%;
+    min-height: initial;
+    transform: translate(40px, -40px);
   }
 }
 .winners__img {

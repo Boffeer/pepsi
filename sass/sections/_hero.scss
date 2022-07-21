@@ -116,6 +116,9 @@
   @media (max-width: 1099px) {
     text-align: center;
   }
+  @media (max-width: 991px) {
+    margin-bottom: 20px;
+  }
 }
 
 .hero__logo {
@@ -139,7 +142,7 @@
     right: unset;
     bottom: unset;
     left: unset;
-    height: 75vh;
+    height: 60vh;
   }
 }
 

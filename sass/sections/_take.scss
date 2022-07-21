@@ -83,6 +83,9 @@
   @media (max-width: 1099px) {
     order: -1;
   }
+  @media (max-width: 991px) {
+    font-size: 50px;
+  }
 }
 
 .take__title .text--hl {
@@ -117,6 +120,9 @@
   @media (max-width: 1099px) {
     margin-bottom: -70px;
   }
+  @media (max-width: 992px) {
+    max-width: 80%;
+  }
 }
 .take-bullet:nth-child(2) {
   margin-bottom: -50px;
@@ -133,6 +139,10 @@
     margin-right: unset;
     margin-bottom: 0;
     margin-left: 25px;
+  }
+  @media (max-width: 992px) {
+    max-width: 80%;
+    margin-left: 55px;
   }
 }
 .take-bullet__pic {
@@ -171,6 +181,9 @@
   }
   @media (max-width: 1200px) {
     font-size: 30px;
+  }
+  @media (max-width: 991px) {
+    font-size: 26px;
   }
 }
 .take-bullet:first-child .take-bullet__desc {
@@ -211,6 +224,10 @@
     right: -60px;
     transform: rotate(-11.81deg);
   }
+  @media (max-width: 991px) {
+    top: -120px;
+    right: -170px;
+  }
 }
 
 .take__phone.no-desktop {
@@ -218,6 +235,11 @@
     right: unset;
     left: -100px;
     transform: rotate(17.34deg);
+  }
+  @media (max-width: 991px) {
+    top: -110px;
+    left: -180px;
+    height: 280px;
   }
 }
 
@@ -231,6 +253,11 @@
 
   @media (max-width: 1100px) {
     font-size: 20px;
+  }
+  @media (max-width: 991px) {
+    br {
+      display: none;
+    }
   }
 }
 
