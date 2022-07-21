@@ -41,7 +41,7 @@ function onPlayerReady(event) {
 }
 
 function cahngePlayerState(data) {
-  console.log(data);
+  // console.log(data);
   if (data.data == 1) {
     document.querySelector(".hero-bg__video-wrap").style.display = "block";
   } else if (data.data == 0) {
@@ -56,7 +56,7 @@ function cahngePlayerState(data) {
  * У какой кнопки таба есть класс из js переменной TAB_ACTIVE_CLASS, тот таб и будет активным сразу
  */
 const tabsBars = document.querySelectorAll(".b_tabs");
-console.log(tabsBars);
+// console.log(tabsBars);
 const tabsPagesWraps = document.querySelectorAll(".b_tabs-content");
 const TAB_ACTIVE_CLASS = "tab--active";
 
@@ -76,7 +76,7 @@ tabsBars.forEach((tabsBar) => {
 setTimeout(() => {
   tabsBars.forEach((tabsBar) => {
     const tabBarButtons = tabsBar.querySelectorAll(".b_tab");
-    console.log(tabBarButtons);
+    // console.log(tabBarButtons);
     tabBarButtons.forEach((tabButton, buttonIndex) => {
       tabButton.addEventListener("click", () => {
         tabBarButtons.forEach((tab) => {
