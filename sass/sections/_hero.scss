@@ -266,4 +266,7 @@
   background-repeat: no-repeat;
   background-position: top right;
   background-size: contain;
+  @media (max-width: 576px) {
+    display: none;
+  }
 }

@@ -346,4 +346,7 @@
   background-position: top right;
   background-size: contain;
   mix-blend-mode: color-dodge;
+  @media (max-width: 576px) {
+    display: none;
+  }
 }

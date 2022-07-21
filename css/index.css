@@ -1156,6 +1156,11 @@ ol {
   background-position: top right;
   background-size: contain;
 }
+@media (max-width: 576px) {
+  .hero-shining {
+    display: none;
+  }
+}
 
 .take {
   position: relative;
@@ -1591,6 +1596,11 @@ ol {
   background-position: top right;
   background-size: contain;
   mix-blend-mode: color-dodge;
+}
+@media (max-width: 576px) {
+  .take-shining {
+    display: none;
+  }
 }
 
 .winners {
