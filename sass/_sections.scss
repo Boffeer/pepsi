@@ -1,0 +1,12 @@
+@import "sections/hero";
+@import "sections/take";
+@import "sections/winners";
+@import "sections/dates";
+
+.section__title {
+  font-size: 120px;
+  font-style: italic;
+  font-weight: 900;
+  line-height: 1.25;
+  text-transform: uppercase;
+}

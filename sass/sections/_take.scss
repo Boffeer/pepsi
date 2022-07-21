@@ -1,0 +1,110 @@
+.take {
+  position: relative;
+  z-index: 2;
+  padding-top: 340px;
+  padding-bottom: 130px;
+  margin-top: -270px;
+}
+.take__container {
+  position: relative;
+  z-index: 2;
+  padding: 0 153px;
+}
+.take-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+
+  pointer-events: var(--pi-decor);
+  background-image: url("../img/take/wave-pattern.png");
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: cover;
+}
+
+.take__lines {
+  position: absolute;
+  top: 190px;
+  left: 0;
+  width: 100%;
+  height: 250px;
+  pointer-events: var(--pi-decor);
+  background-image: url("../img/take/line_block.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.take__date {
+  margin-bottom: -10px;
+  font-size: 38px;
+  font-style: italic;
+  font-weight: 900;
+}
+
+.take__bullets {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: -10px;
+}
+.take-bullet {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  max-width: 50%;
+}
+.take-bullet:last-child {
+  max-width: 61%;
+  padding-left: 60px;
+  margin-top: -80px;
+  margin-right: auto;
+  margin-left: auto;
+}
+.take-bullet__pic {
+  display: block;
+  width: 100%;
+  max-width: 328px;
+  height: auto;
+}
+.take-bullet__img {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.take-bullet__desc {
+  margin-left: -40px;
+  font-size: 45px;
+  font-style: italic;
+  font-weight: 800;
+}
+.take-bullet:first-child .take-bullet__desc {
+  margin-left: -80px;
+  // margin-right: 100px;
+  // margin-left: -40px;
+}
+
+.take__phone {
+  position: absolute;
+  top: -370px;
+  right: 200px;
+  width: 440px;
+  height: 737px;
+  background-image: url("../img/take/phone.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+
+.take__hint {
+  margin-bottom: 56px;
+  font-size: 25px;
+  font-style: italic;
+  font-weight: 800;
+  line-height: 30px;
+  text-align: center;
+}

@@ -1,0 +1,40 @@
+.callout {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  max-width: 1200px;
+  margin-right: auto;
+  margin-left: auto;
+  font-style: italic;
+}
+.callout__title {
+  position: relative;
+  width: 100%;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  margin-bottom: 16px;
+  font-size: 55px;
+  font-style: italic;
+  font-weight: 900;
+  text-align: center;
+}
+
+.callout__title::before,
+.callout__title::after {
+  position: absolute;
+  display: block;
+  width: 25%;
+  height: 2px;
+  content: "";
+  background-color: #fff;
+}
+.callout__title::before {
+  top: 0;
+  left: 0;
+}
+.callout__title::after {
+  right: 0;
+  bottom: 0;
+}

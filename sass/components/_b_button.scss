@@ -7,3 +7,18 @@
   background-color: #dfdfdf;
   border-radius: 0.65em;
 }
+
+.button {
+  display: inline-block;
+  padding: 12px 35px;
+  font-family: var(--ff-body);
+  font-size: 30px;
+  font-weight: 700;
+  text-align: center;
+  text-transform: uppercase;
+  border-radius: 60em;
+}
+.button--primary {
+  color: var(--c-accent);
+  background-color: #fff;
+}

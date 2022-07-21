@@ -1,0 +1,15 @@
+.logo,
+.logo__pic,
+.logo__img {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.logo {
+  height: 86px;
+}
+
+.logo__img {
+  object-fit: contain;
+}

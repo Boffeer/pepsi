@@ -4,15 +4,45 @@
 @import "grids";
 @import "mixins";
 @import "components";
+@import "sections";
 
 body {
   font-family: var(--ff-body);
   font-size: var(--fz-base);
-  color: var(--c-text-regular);
+  color: #fff;
+  background-color: var(--bg-body);
 }
 
 .fixed {
   position: fixed;
   top: 0;
   left: 0;
+}
+
+.text--hl {
+  position: relative;
+}
+.text--hl::before,
+.text--hl::after {
+  position: absolute;
+  top: 0;
+  left: -5%;
+  display: block;
+  width: 110%;
+  height: 100%;
+  content: "";
+  border: 3px solid #fff;
+  border-radius: 0.6em;
+}
+
+.text--hl::before {
+  transform: rotate(2.53deg);
+}
+.text--hl::after {
+  transform: rotate(-2.11deg);
+}
+
+.wrapper {
+  max-width: 100%;
+  overflow-x: hidden;
 }
