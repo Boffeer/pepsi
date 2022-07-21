@@ -203,7 +203,8 @@
   height: 100%;
   overflow: hidden;
   @media (max-width: 992px) {
-    display: none;
+    // display: none;
+    max-width: 100%;
   }
 }
 .hero-bg__video {
@@ -213,8 +214,9 @@
   width: 160%;
   height: 150%;
   pointer-events: none;
-  @media (max-width: 375px) and (min-width: 360px) {
-    top: -35%;
+  // @media (max-width: 375px) and (min-width: 360px) {
+  @media (max-width: 375px) {
+    top: -30%;
     left: -40%;
     width: 170%;
     height: 150%;

@@ -1105,7 +1105,7 @@ ol {
 }
 @media (max-width: 992px) {
   .hero-bg__video-wrap {
-    display: none;
+    max-width: 100%;
   }
 }
 
@@ -1117,9 +1117,9 @@ ol {
   height: 150%;
   pointer-events: none;
 }
-@media (max-width: 375px) and (min-width: 360px) {
+@media (max-width: 375px) {
   .hero-bg__video {
-    top: -35%;
+    top: -30%;
     left: -40%;
     width: 170%;
     height: 150%;

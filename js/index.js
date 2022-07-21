@@ -107,18 +107,30 @@ function onYouTubePlayerAPIReady() {
   player = new YT.Player("ytplayer", {
     videoId: "XpRbFYtR0_A",
     events: {
+      onReady: onPlayerReady,
       onStateChange: cahngePlayerState,
     },
     playerVars: {
       autoplay: 1,
-      showinfo: 0,
       controls: 0,
+      showinfo: 0,
+      modestbranding: 1,
+      fs: 0,
+      cc_load_policy: 0,
+      iv_load_policy: 3,
+      autohide: 1,
+      playsinline: 1,
       mute: 1,
       loop: 1,
       rel: 0,
       version: 3,
     },
   });
+}
+
+function onPlayerReady(event) {
+  event.target.setVolume(40);
+  event.target.playVideo();
 }
 
 function cahngePlayerState(data) {
