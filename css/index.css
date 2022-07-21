@@ -1653,6 +1653,11 @@ ol {
   background-position: center;
   background-size: cover;
 }
+@media (max-width: 1600px) {
+  .winners {
+    padding-bottom: 140px;
+  }
+}
 @media (max-width: 1200px) {
   .winners {
     padding-bottom: 130px;
