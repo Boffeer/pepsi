@@ -5534,7 +5534,7 @@ a.text--underline:hover {
 #requirements {
   max-height: 80vh;
   overflow: auto;
-  background-color: var(--c-accent);
+  background-color: #0012c3;
 }
 
 #requirements h3 {
