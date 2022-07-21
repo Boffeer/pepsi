@@ -123,9 +123,10 @@
   }
 }
 .hero__title {
-  margin-bottom: 43px;
+  margin-bottom: 63px;
   font-size: 110px;
   @media (max-width: 1750px) {
+    margin-bottom: 43px;
     font-size: 80px;
   }
   @media (max-width: 1500px) {

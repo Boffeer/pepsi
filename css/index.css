@@ -1003,11 +1003,12 @@ ol {
 }
 
 .hero__title {
-  margin-bottom: 43px;
+  margin-bottom: 63px;
   font-size: 110px;
 }
 @media (max-width: 1750px) {
   .hero__title {
+    margin-bottom: 43px;
     font-size: 80px;
   }
 }
@@ -1289,6 +1290,11 @@ ol {
 @media (max-width: 767px) {
   .take__date {
     font-size: 18px;
+  }
+}
+@media (max-width: 420px) {
+  .take__date {
+    margin-bottom: 0;
   }
 }
 
@@ -1600,7 +1606,7 @@ ol {
 }
 
 .take__hint {
-  margin-bottom: 56px;
+  margin-bottom: 26px;
   font-size: 25px;
   font-style: italic;
   font-weight: 800;
@@ -1648,6 +1654,7 @@ ol {
   position: relative;
   z-index: 3;
   padding-bottom: 230px;
+  padding-bottom: 90px;
   background-image: url("../img/winners/winners-bg.jpg");
   background-repeat: no-repeat;
   background-position: center;
@@ -1711,7 +1718,7 @@ ol {
   max-width: 78%;
   min-height: 1000px;
   margin-top: 0;
-  margin-bottom: -43%;
+  margin-bottom: -45%;
   margin-left: auto;
   pointer-events: var(--pi-decor);
   transform: translate(40px, -180px);
@@ -1905,6 +1912,12 @@ ol {
   padding-bottom: 125px;
   padding-left: 40px;
   background: #020824;
+}
+@media (min-width: 1800px) {
+  .dates__container {
+    padding-right: 160px;
+    padding-left: 160px;
+  }
 }
 @media (max-width: 767px) {
   .dates__container {
@@ -2345,8 +2358,7 @@ body {
 
 .text--small {
   display: block;
-  margin-top: 30px;
-  font-size: 0.45em;
+  font-size: 0.4em;
   line-height: 1;
 }
 

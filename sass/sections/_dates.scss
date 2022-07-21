@@ -9,6 +9,10 @@
   padding-left: 40px;
   background: #020824;
 
+  @media (min-width: 1800px) {
+    padding-right: 160px;
+    padding-left: 160px;
+  }
   @media (max-width: 767px) {
     padding-right: 16px;
     padding-left: 16px;
