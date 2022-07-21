@@ -1532,6 +1532,7 @@ ol {
   width: 100%;
   max-width: 440px;
   height: 737px;
+  pointer-events: var(--pi-decor);
   background-image: url("../img/take/phone.png");
   background-repeat: no-repeat;
   background-position: center;
