@@ -1,15 +1,16 @@
 .dates {
   position: relative;
   z-index: 4;
-  padding-top: 280px;
+  padding-top: 190px;
   padding-bottom: 125px;
-  margin-top: -390px;
+  margin-top: -380px;
   background: linear-gradient(360deg, #020824 85.81%, rgba(0, 0, 0, 0) 95.71%);
 
-  @media (max-width: 1500px) {
+  @media (max-width: 1600px) {
     padding-bottom: 70px;
   }
   @media (max-width: 1200px) {
+    padding-top: 150px;
     padding-bottom: 35px;
   }
 }
@@ -23,20 +24,47 @@
 }
 
 .dates__title {
-  margin-bottom: 60px;
-  font-size: 35px;
+  margin-bottom: 90px;
+  font-size: 120px;
   font-style: italic;
   font-weight: 900;
-  line-height: 42px;
   text-align: center;
   text-transform: uppercase;
 
-  @media (max-width: 1400px) {
-    font-size: 32px;
+  @media (max-width: 1600px) {
+    margin-bottom: 60px;
+    font-size: 90px;
   }
   @media (max-width: 1200px) {
-    font-size: 28px;
+    font-size: 70px;
   }
+}
+.dates__subtitle {
+  margin-bottom: 70px;
+  font-size: 40px;
+  font-style: italic;
+  font-weight: 900;
+  line-height: 1.25;
+  color: #ffffff;
+  text-align: center;
+  text-transform: uppercase;
+
+  @media (max-width: 1500px) {
+    margin-bottom: 40px;
+    font-size: 35px;
+  }
+}
+
+.dates__title .text--hl:before {
+  left: -3%;
+  width: 106%;
+  transform: rotate(0.95deg);
+}
+
+.dates__title .text--hl:after {
+  left: -3%;
+  width: 106%;
+  transform: rotate(-0.79deg);
 }
 
 .dates-table__title {
@@ -55,7 +83,8 @@
   grid-template-columns: 350px auto;
   column-gap: 104px;
 
-  @media (max-width: 1500px) {
+  @media (max-width: 1600px) {
+    grid-template-columns: 320px auto;
     column-gap: 65px;
   }
   @media (max-width: 1400px) {
@@ -85,6 +114,9 @@
   grid-template-columns: 312px auto;
   column-gap: 29px;
 
+  @media (max-width: 1500px) {
+    grid-template-columns: 222px auto;
+  }
   @media (max-width: 1200px) {
     grid-template-columns: 212px auto;
   }

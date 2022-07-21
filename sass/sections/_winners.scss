@@ -16,16 +16,20 @@
   max-width: 78%;
   min-height: 1000px;
   margin-top: 0;
-  margin-bottom: -67%;
+  margin-bottom: -43%;
   margin-left: auto;
   transform: translate(40px, -180px);
 
   @media (max-width: 1750px) {
     max-width: 88%;
-    margin-bottom: -77%;
+    margin-bottom: -47%;
   }
-  @media (max-width: 1200px) {
-    margin-bottom: -110%;
+  @media (max-width: 1600px) {
+    min-height: 860px;
+    margin-bottom: -60%;
+  }
+  @media (max-width: 1199px) {
+    margin-bottom: -70%;
   }
 }
 .winners__img {
@@ -39,7 +43,22 @@
   position: relative;
   z-index: 2;
   margin-bottom: 50px;
-  text-shadow: 1px 1px 20px #3b72d7;
+  font-size: 85px;
+  font-style: italic;
+  // text-shadow: 1px 1px 20px #3b72d7;
+  font-weight: 800;
+  line-height: 1.25;
+  text-transform: uppercase;
+
+  @media (max-width: 1500px) {
+    font-size: 65px;
+  }
+  @media (max-width: 1300px) {
+    font-size: 55px;
+  }
+  @media (max-width: 1200px) {
+    font-size: 45px;
+  }
 }
 .winners__title span {
   display: block;

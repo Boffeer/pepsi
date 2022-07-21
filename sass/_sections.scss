@@ -1,9 +1,4 @@
-@import "sections/hero";
-@import "sections/take";
-@import "sections/winners";
-@import "sections/dates";
-@import "sections/callback";
-
+/* stylelint-disable no-invalid-position-at-import-rule */
 .section__title {
   font-size: 120px;
   font-style: italic;
@@ -21,3 +16,9 @@
     font-size: 60px;
   }
 }
+
+@import "sections/hero";
+@import "sections/take";
+@import "sections/winners";
+@import "sections/dates";
+@import "sections/callback";

@@ -41,8 +41,28 @@ body {
 .text--hl::after {
   transform: rotate(-2.11deg);
 }
+.text--small {
+  display: block;
+  margin-top: 30px;
+  font-size: 0.45em;
+  line-height: 1;
+}
+.text--underline {
+  border-bottom: 1px solid #fff;
+}
 
 .wrapper {
   max-width: 100%;
   overflow-x: hidden;
+}
+
+.no-mobile {
+  @media (max-width: 1099px) {
+    display: none;
+  }
+}
+.no-desktop {
+  @media (min-width: 1100px) {
+    display: none;
+  }
 }

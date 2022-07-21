@@ -4,7 +4,13 @@
   padding-top: 340px;
   padding-bottom: 130px;
   margin-top: -270px;
+
+  @media (max-width: 1099px) {
+    padding-top: 110px;
+    margin-top: 0;
+  }
 }
+
 .take__container {
   position: relative;
   z-index: 3;
@@ -33,6 +39,10 @@
   background-repeat: no-repeat;
   background-position: top center;
   background-size: cover;
+
+  @media (max-width: 1099px) {
+    background-color: #2b55b1;
+  }
 }
 
 .take__lines {
@@ -46,6 +56,10 @@
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+
+  @media (max-width: 1099px) {
+    display: none;
+  }
 }
 .take__date {
   margin-bottom: -10px;
@@ -56,6 +70,21 @@
     margin-bottom: 10px;
   }
 }
+
+.take__offer {
+  @media (max-width: 1099px) {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+}
+
+.take__title {
+  @media (max-width: 1099px) {
+    order: -1;
+  }
+}
+
 .take__title .text--hl {
   @media (max-width: 1750px) {
     margin-left: 20px;
@@ -65,13 +94,17 @@
 .take__bullets {
   display: flex;
   flex-wrap: wrap;
-  align-items: center;
+  align-items: flex-start;
   justify-content: space-between;
   margin-bottom: -10px;
 
   @media (max-width: 1200px) {
     justify-content: center;
-    margin-left: -170px;
+  }
+  @media (max-width: 1099px) {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
   }
 }
 .take-bullet {
@@ -79,6 +112,14 @@
   align-items: center;
   justify-content: flex-start;
   max-width: 50%;
+
+  @media (max-width: 1099px) {
+    margin-bottom: -70px;
+  }
+}
+.take-bullet:nth-child(2) {
+  margin-bottom: -50px;
+  margin-left: 120px;
 }
 .take-bullet:last-child {
   max-width: 61%;
@@ -86,12 +127,20 @@
   margin-top: -80px;
   margin-right: auto;
   margin-left: auto;
+  @media (max-width: 1099px) {
+    max-width: 50%;
+    margin-top: unset;
+    margin-right: unset;
+    margin-bottom: 0;
+    margin-left: -40px;
+  }
 }
 .take-bullet__pic {
   display: block;
   width: 100%;
   max-width: 328px;
   height: auto;
+  margin-left: -100px;
 
   @media (max-width: 1750px) {
     max-width: 290px;
@@ -157,6 +206,18 @@
   }
   @media (max-width: 1200px) {
     height: 380px;
+  }
+  @media (max-width: 1099px) {
+    right: -60px;
+    transform: rotate(-11.81deg);
+  }
+}
+
+.take__phone.no-desktop {
+  @media (max-width: 1099px) {
+    right: unset;
+    left: -100px;
+    transform: rotate(17.34deg);
   }
 }
 
